@@ -1,0 +1,49 @@
+#a1 {
+    border-bottom: 5px solid black;  
+    width: 100px;
+    height: 100px;
+    
+}
+#a2 {
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    width: 100px;
+    height: 100px;
+}
+#a3 {
+    border-bottom: 5px solid black;
+    width: 100px;
+    height: 100px;
+}
+#b1 {
+    border-bottom: 5px solid black;
+    width: 100px;
+    height: 100px;
+}
+#b2 {
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    width: 100px;
+    height: 100px;
+}
+#b3 {
+    border-bottom: 5px solid black;
+    width: 100px;
+    height: 100px;
+}
+#c1 {   
+    width: 100px;
+    height: 100px;
+}
+#c2 {   
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    width: 100px;
+    height: 100px;
+}
+#c3 {   
+    width: 100px;
+    height: 100px;
+}
