@@ -1,49 +1,49 @@
-[data-index = "1"] {
+[data-index = "a1"] {
     border-bottom: 5px solid black;  
     width: 100px;
     height: 100px;
     
 }
-[data-index="2"] {
+[data-index="a2"] {
     border-bottom: 5px solid black;
     border-right: 5px solid black;
     border-left: 5px solid black;
     width: 100px;
     height: 100px;
 }
-[data-index="3"] {
+[data-index="a3"] {
     border-bottom: 5px solid black;
     width: 100px;
     height: 100px;
 }
-[data-index="4"] {
+[data-index="b1"] {
     border-bottom: 5px solid black;
     width: 100px;
     height: 100px;
 }
-[data-index="5"] {
+[data-index="b2"] {
     border-left: 5px solid black;
     border-bottom: 5px solid black;
     border-right: 5px solid black;
     width: 100px;
     height: 100px;
 }
-[data-index="6"] {
+[data-index="b3"] {
     border-bottom: 5px solid black;
     width: 100px;
     height: 100px;
 }
-[data-index="7"] {   
+[data-index="c1"] {   
     width: 100px;
     height: 100px;
 }
-[data-index="8"] {   
+[data-index="c2"] {   
     border-left: 5px solid black;
     border-right: 5px solid black;
     width: 100px;
     height: 100px;
 }
-[data-index="9"] {   
+[data-index="c3"] {   
     width: 100px;
     height: 100px;
 }

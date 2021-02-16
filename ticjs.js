@@ -4,7 +4,6 @@ const com = [];
 
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click',onClick));
 function onClick(clickedCellEvent){
-    console.log("clicked")
     const clickCell = clickedCellEvent.target;
     var id = clickCell.getAttribute('id');
     if(table.includes(id)){
