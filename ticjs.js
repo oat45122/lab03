@@ -1,12 +1,39 @@
-function tdclick () {
-    const image = document.querySelector('img1');
-    image.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAZlBMVEX///8AAAALCwtHR0dCQkLg4ODd3d2YmJgjIyPm5uY+Pj6JiYkHBwfQ0ND4+Pi7u7sYGBhZWVkqKipzc3PCwsIcHBzu7u6oqKgTExOSkpLX19cyMjJ9fX309PRmZmbKysqysrJOTk5UzNwIAAACQElEQVRoge2a2ZKCMBBFxX1n3Bh39P9/Uu9YNSXJDUkgdZ84r3ZsPBLS6dDrdXQIyKdZleEsfPBsbgye5jTuJzOZhycxc7yz0Djzh7xZhOZY2GN5kokduFyF5Vgt7bETHjqwI7frkBzriz1y6Igd9e3YXUiSnT2uP3YFE2EZv0kq7MkwhyxAhB0KX47iEC4LMGEbX5JNjCzAhP3W53jEyQJE2HFUN2B2jJMFmLBB5FXVywJM2MkdfoqX5bg098Q/k6nukwWYsItj4rOp7pcFmLArD702kwWIsGzPAksSGCILMGHTmx13I4tDmCzAhN3tsHtzWYAJe5hBeQtZgAk7Git+YS/XEbIAE/ashjzbyQJMWOUr2GXEyAJM2LeMsefzMNiVfpVIdgkULQswYf8lEimBomUBJmxZfj5jJVC8LMCEfUqk9TaNLMCE/ZVIpARqJAswYdmDT/VmsgATdihYCdRUFhiSr9uQEqixLECFJZUFmLC0sgC7w5LKAiHC2skCAcJaygJeYW1lAZ+w9rKAR1gCWaBWWApZoE5YGlmgRlgiWcApLJUsVRKFLskfr7iFFZNR8lhRPCAVj3rJoqVYfhWFhKQkYrJSF3eKMpXKyhMX3Iqtg2ITJNnOKTamii22pFmgaHsENHDYxI8SJmlFKZpqivagpNHJetwlCywb9rd7muazpI3OZJ1dwWdyRQHCFEcbkkMaxXGT4uBMcgSoOMxUHMtKDpgVR+WSQ3/J6wuSFzHavVJitpAdr5R0dCTmBV4EHKmDl3/FAAAAAElFTkSuQmCC';
+const table = [];
+const player = [];
+const com = [];
+
+document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click',onClick));
+function onClick(clickedCellEvent){
+    console.log("clicked")
+    const clickCell = clickedCellEvent.target;
+    var id = clickCell.getAttribute('id');
+    if(table.includes(id)){
+        return false;
+    }
+    else{
+        clickCell.src = "https://img.icons8.com/ios-filled/2x/x.png";
+        table.push(id);
+        player.push(id);
+    }
+    bot();
+    function bot(){
+        while(true)
+        {
+            var item = Math.floor(Math.random()*9 + 1);
+            const random = document.getElementById(item);
+            var id = random.getAttribute('id')
+            if(table.length===9){
+                break;
+            }
+            else if(table.includes(id)){
+                continue;
+            }
+            else{
+                random.src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/O-Jolle_insigna.png/100px-O-Jolle_insigna.png"
+                com.push(id);
+                table.push(id);
+                break;
+            }    
+        }
+    }
 }
-
-const a1 = document.querySelector('#a1');
-a1.addEventListener('click',tdclick);
-const a2 = document.querySelector('#a2');
-a2.addEventListener('click',tdclick);
-const a3 = document.querySelector('#a3');
-a3.addEventListener('click',tdclick);
-
